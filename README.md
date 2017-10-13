@@ -1,6 +1,6 @@
-# agricultural-insurance-microshop
+# CcApp
 
-> This is an agricultural insurance micro shop
+> This is App
 
 ## Build Setup
 
