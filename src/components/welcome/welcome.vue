@@ -1,7 +1,7 @@
 <template>
   <div class="welcome-bg">
     <span class="skip">跳过 <b>1s</b></span>
-    <div class="" style="position: absolute;top: 50%;margin-top:-13.625rem">
+    <div class="welcome-con">
       <div class="start-page">
         <img src="../../assets/welcome-img.png" alt="" class="img1">
       </div>
@@ -14,7 +14,6 @@
 </template>
 
 <script type="text/ecmascript-6">
-
 </script>
 
 <style lang="less" scoped>
