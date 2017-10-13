@@ -1,6 +1,6 @@
 <template>
   <div class="welcome-bg">
-    <span class="skip">跳过 <b>1s</b></span>
+    <span class="skip">跳过 <b>{{time}}s</b></span>
     <div class="welcome-con">
       <div class="start-page">
         <img src="../../assets/welcome-img.png" alt="" class="img1">
@@ -12,10 +12,28 @@
     </div>
   </div>
 </template>
-
 <script type="text/ecmascript-6">
+  export default {
+    data(){
+      return{
+        time:3
+      }
+    },
+    methods:{
+      timer() {
+        if (this.time > 0) {
+          this.time--;
+          setTimeout(this.timer, 1000);
+        }else{
+          this.$router.replace({path: '/login'})
+        }
+      }
+    },
+    mounted(){
+      this.timer()
+    }
+  }
 </script>
-
 <style lang="less" scoped>
 @import "welcome";
 </style>

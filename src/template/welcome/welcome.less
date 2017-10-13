@@ -5,9 +5,8 @@
   background: url("../../assets/welcome-bg.png") no-repeat;
   background-size:@h @h;
   .welcome-con{
-    position: absolute;
-    top: 50%;
-    margin-top:-13.625rem
+    padding-top: 3.9375rem;
+    max-width: 640px;
   }
   .skip{
     position: absolute;
@@ -15,7 +14,7 @@
     right:1.25rem;
     font-size: .75rem;
     color: #fff;
-    padding:0.28125rem .5625rem;
+    padding:0.26rem .5625rem 0.28rem;
     background-color: #b1bcbb;
     border-radius: 15px;
   }
@@ -39,5 +38,10 @@
       letter-spacing:8px;
       text-align: center;
     }
+  }
+}
+@media screen and (max-height: 480px) {
+  .welcome-bg .welcome-con{
+    padding-top: 2.5rem;
   }
 }
